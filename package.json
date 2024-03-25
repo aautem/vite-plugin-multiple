@@ -7,8 +7,14 @@
   "types": "types",
   "exports": {
     ".": {
-      "import": "./index.js",
-      "require": "./index.cjs"
+      "import": {
+        "default": "./index.js",
+        "types": "./types/index.d.ts"
+      },
+      "require": {
+        "default": "./index.cjs",
+        "types": "./types/index.d.ts"
+      }
     }
   },
   "repository": "https://github.com/vite-plugin/vite-plugin-multiple.git",
